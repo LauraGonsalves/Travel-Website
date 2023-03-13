@@ -1,0 +1,277 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyColor: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+
+}
+
+
+.footer {
+    margin: 1rem 2rem;
+
+    .videoDiv {
+        height: 2rem;
+        width: auto;
+
+        video {
+            position: relative;
+            height: auto;
+            max-width: 100%;
+            background-size: contain;
+        }
+
+
+
+    }
+
+
+
+    @media only screen and (min-width : 992px) {
+        .secContent {
+
+            .text {
+                position: absolute;
+
+                color: var(--textColor);
+                align-items: center;
+                justify-content: center;
+                padding-left: 17rem;
+                padding-top: 4rem;
+
+
+                small {
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+
+            .inputDiv {
+                position: absolute;
+                padding-left: 25rem;
+                padding-top: 20rem;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+
+                input {
+                    width: 20rem;
+                    height: 3rem;
+                    outline: none;
+                    background: transparent;
+                    border: 1px solid var(--whiteColor);
+                    padding: 10px;
+                    border-radius: 10px;
+                    color: var(--whiteColor);
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                    &::placeholder {
+                        color: var(--whiteColor);
+                        opacity: .5;
+                    }
+                }
+
+                button {
+
+
+                    font-size: 1.2rem;
+                    color: var(--whiteColorDeam);
+                    justify-content: space-between;
+                    gap: .3rem;
+
+                    .icon {
+                        align-items: center;
+
+                        font-size: 1.2rem;
+                    }
+                }
+
+            }
+
+            .card {
+                margin-bottom: auto;
+                max-width: 30rem;
+                position: absolute;
+                box-shadow: 0 2px 4px rgba(120, 140, 141, 0.549);
+                background: var(--cardBG);
+                border: 1px solid var(--whiteColor);
+                padding: 8px;
+                border-radius: 10px;
+                margin-top: 50rem;
+                margin-left: 25rem;
+                display: flex;
+                flex-direction: column;
+
+                .details {
+                    padding: 1rem 1rem;
+
+                    .name {
+                        font-size: 3rem;
+                        color: var(--textColor);
+
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        color: var(--textColor);
+
+                    }
+                }
+
+                .socialMedia {
+                    color: var(--textColor);
+                    display: flex;
+                    gap: .5rem;
+                    padding-left: 9rem;
+                    padding-top: 1rem;
+
+                    .icon {
+                        font-size: 1.5rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--PrimaryColor);
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.secContent {
+
+    .text {
+        position: absolute;
+
+        color: var(--textColor);
+        align-items: center;
+        justify-content: center;
+        padding-left: 10rem;
+        padding-top: 2rem;
+
+
+        small {
+            font-size: 0.8rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .inputDiv {
+        position: absolute;
+        padding-left: 9rem;
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: row;
+        gap: .7rem;
+
+
+        input {
+            width: 15rem;
+            height: 2rem;
+            outline: none;
+            background: transparent;
+            border: 1px solid var(--whiteColor);
+            padding: 10px;
+            border-radius: 10px;
+            color: var(--whiteColor);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            &::placeholder {
+                color: var(--whiteColor);
+                opacity: .5;
+            }
+        }
+
+        button {
+
+
+            font-size: .7rem;
+            color: var(--whiteColorDeam);
+            justify-content: space-between;
+            gap: .3rem;
+
+            .icon {
+                align-items: center;
+
+                font-size: .7rem;
+            }
+        }
+
+    }
+
+    .card {
+        margin-bottom: auto;
+        max-width: 35rem;
+        position: absolute;
+        box-shadow: 0 2px 4px rgba(120, 140, 141, 0.549);
+        background: var(--cardBG);
+        border: 1px solid var(--whiteColor);
+        padding: 8px;
+        border-radius: 10px;
+        margin-top: 27rem;
+
+        display: flex;
+        flex-direction: column;
+
+        .details {
+            padding: .3rem .3rem;
+
+            .name {
+                font-size: 1.5rem;
+                color: var(--textColor);
+
+            }
+
+            p {
+                font-size: 1rem;
+                color: var(--textColor);
+
+            }
+        }
+
+        .socialMedia {
+
+            display: flex;
+            gap: .5rem;
+            padding-left: 12rem;
+            padding-top: .3rem;
+
+            a {
+                color: var(--textColor);
+
+
+                .icon {
+                    font-size: 1.5rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--PrimaryColor);
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
